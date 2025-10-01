@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Cave Escape - A Bat Flying Game</title>
+    <meta name="description" content="Fly your bat through a dangerous, glowing cave, dodge the ancient monoliths, and see how high you can score in this challenging arcade game.">
+    <meta name="keywords" content="cave escape, bat game , endless runner ">
+    <meta name="author" content="Saksham Chhabra">
+    <link rel="icon" href="./images/caveEscapeFavicon.png" type="image/png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <div id="score">0</div>
+        <div id="bird"></div>
+
+        <div class="pipe top"></div>
+        <div class="pipe bottom"></div>
+    </div>
+
+    <div id="start-menu" class="menu">
+        <h1>Cave Escape</h1>
+        <button id="start-button">Begin Escape</button>
+        <p>High Score: <span id="high-score">0</span></p>
+    </div>
+
+    <div id="game-over-menu" class="menu">
+        <h1>Escape Failed</h1>
+        <p>Score: <span id="final-score">0</span></p>
+        <p>High Score: <span id="high-score-gameover">0</span></p>
+        <button id="restart-button">Try Again</button>
+    </div>
+
+    <div id="pause-menu" class="menu">
+        <h1>Paused</h1>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
