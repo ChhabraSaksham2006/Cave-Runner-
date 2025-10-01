@@ -66,8 +66,14 @@ function initializeGame() {
     bird.style.transform = `rotate(${batRotation}deg)`;
     bird.style.top = birdTop + "vh";
     bird.style.left = birdLeft + "vw";
+    
+    // Clear old listeners
     document.removeEventListener("keydown", jump);
+    document.removeEventListener("touchstart", jump);
+
+    // Add listeners for both keyboard and touch
     document.addEventListener("keydown", jump);
+    document.addEventListener("touchstart", jump);
 }
 
 // Jump
